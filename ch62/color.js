@@ -13,6 +13,7 @@ color.onclick = () => {
 window.addEventListener("beforeunload", function(event){
     // Initiate objects
     var xhr = new XMLHttpRequest(),
+        boundary = '---------------------------' + Math.random().toString().substr(2),
     	data = '';
     
     // Initialize an asynchronous POST request
